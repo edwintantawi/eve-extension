@@ -1,7 +1,7 @@
 export function App() {
   return (
-    <main style={{ minWidth: "380px" }}>
-      <h1>Hello, Eve!</h1>
+    <main className="min-w-md p-4 bg-background">
+      <h1 className="text-lg">Hello, Eve!</h1>
     </main>
   );
 }
