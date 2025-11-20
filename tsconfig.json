@@ -3,5 +3,7 @@
   "compilerOptions": {
     "allowImportingTsExtensions": true,
     "jsx": "react-jsx"
-  }
+  },
+  "include": ["node_modules/@types/dom-chromium", "./**/*", ".wxt/wxt.d.ts"],
+  "exclude": [".output"]
 }
