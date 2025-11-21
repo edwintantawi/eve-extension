@@ -1,7 +1,6 @@
-"use client";
-
 import { Card } from "@/ui/components/card";
 import { cn } from "@/ui/utils";
+import { Streamdown } from "streamdown";
 
 interface BubbleChatProps {
   content: string;
@@ -30,7 +29,7 @@ export function BubbleChat({
           sender === "user" ? "bg-primary text-primary-foreground" : "bg-muted"
         )}
       >
-        <p className="text-sm word-break whitespace-pre-wrap">{content}</p>
+        <div className="text-sm">{<Streamdown>{content}</Streamdown>}</div>
         <p
           className={cn(
             "text-xs mt-1",
