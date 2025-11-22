@@ -1,7 +1,7 @@
-import { ChatInputField } from "./components/chat-input-field";
-import { ChatRoom } from "./components/chat-room";
-import { Header } from "./components/header";
-import { useChat } from "./hooks/use-chat";
+import { ChatInputField } from "@/entrypoints/sidepanel/components/chat-input-field";
+import { ChatRoom } from "@/entrypoints/sidepanel/components/chat-room";
+import { Header } from "@/entrypoints/sidepanel/components/header";
+import { useChat } from "@/entrypoints/sidepanel/hooks/use-chat";
 
 export function App() {
   const { messages, isLoading, sendMessage } = useChat();
